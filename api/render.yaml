@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fraud-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    runtime: python
+    repo: https://github.com/kelvinrobot/FRAUD-DETECTION-BANK-AI.git
+    branch: main
+    rootDir: api
+    envVars:
+      - key: PORT
+        value: 8000
