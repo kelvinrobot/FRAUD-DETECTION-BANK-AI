@@ -7,5 +7,5 @@ tensorflow
 scikit-learn
 joblib
 pandas
-uvicorn api.fraud_api:app --reload --port 8000
-streamlit run streamlit_frontend/app.py
+uvicorn 
+streamlit 
